@@ -8,7 +8,7 @@
 
 | Name | Example | Usage |
 | :--- | :--- | :--- |
-| **[ar\|autoresponse]** | !ar | Lists the triggers, and ignores for the server |
+| **[ar\|autoresponse]** | !ar<mashallah> | Lists the triggers, and ignores for the server |
 | **ar list** | !ar list | Lists all the triggers in a paginated fashion |
 | **ar [add\|create] &lt;trigger&gt; &lt;response&gt;** | !ar add "hello there" Hello! I'm a bot created by carl :muscle: | Adds a trigger that carlbot will look for and say/do something when it is said. This command looks for a substring within the message, meaning that if you add _hi_ then _t_**hi**_s_ will also match. See the next command if that is too greedy for you. |
 | **ar [strict\|s] &lt;trigger&gt; &lt;response&gt;** | !ar strict "its coming home" {reactu: ⚽️} | This works a lot like normal ar add with one vital exception: it looks for exact sequences of words, rather than substrings. What this means is that if you add the strict trigger `hell` and someone says `hello` it will not match, it also means that triggers with more than one word requires an exact match per word (this is a lot more reasonable to use than this text makes it out to be). |
